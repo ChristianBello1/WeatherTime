@@ -15,7 +15,7 @@ html,body{
   flex-direction: column;
   align-items: center; /* Centra i contenuti in orizzontale */
   min-height: 100vh;
-  justify-content: center;
+  padding-top: 200px;
   background-color: #00000075;
 }
 
