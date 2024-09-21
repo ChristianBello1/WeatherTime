@@ -1,0 +1,22 @@
+/* src/components/CurrentWeatherDisplay.css */
+.current-weather-display {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .current-weather-temp {
+    margin-bottom: 10px;
+  }
+  
+  .current-weather-temp h1 {
+    font-size: 150px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .current-weather-temp p {
+    font-size: 18px;
+    margin: -10px 0;
+    color: #ffffff;
+  }

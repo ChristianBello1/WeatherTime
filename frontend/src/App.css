@@ -1,0 +1,120 @@
+/* Layout generale */
+html,body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0 auto; /* Centra il contenitore orizzontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra i contenuti in orizzontale */
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #00000075;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box; /* Assicura che padding sia incluso nella larghezza */
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Colore del bordo leggermente trasparente */
+  border-radius: 4px;
+  background-color: transparent; /* Sfondo trasparente */
+  color: white; /* Colore del testo bianco */
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.37); /* Colore del placeholder bianco */
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.search-bar{
+  margin-bottom: -40px;
+}
+
+.weather-display {
+  margin-top: 20px;
+  width: 100%; /* Prendi tutto lo spazio disponibile */
+  max-width: 600px; /* Limita la larghezza per la leggibilità */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.weather-display h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.weather-display p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.logo{
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .weather-display h2 {
+    font-size: 24px;
+  }
+
+  .weather-display p {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%; /* Button si espande a tutta larghezza su schermi piccoli */
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .weather-display h2 {
+    font-size: 22px;
+  }
+
+  .weather-display p {
+    font-size: 14px;
+  }
+}

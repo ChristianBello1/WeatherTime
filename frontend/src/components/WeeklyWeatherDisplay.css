@@ -1,0 +1,48 @@
+.weekly-weather-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.weekly-weather-header {
+  display: flex;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.header-col {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.weekly-weather-row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.weekly-weather-date, .weekly-weather-icon, .weekly-weather-temp {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.weekly-weather-date {
+  font-weight: bold;
+}
+
+.weekly-weather-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  padding: 20px;
+}

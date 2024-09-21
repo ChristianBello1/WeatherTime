@@ -1,0 +1,86 @@
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.carousel-container:active {
+  cursor: grabbing;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.carousel-item img {
+  width: 50px;
+  height: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 5px;
+  }
+
+  .carousel-item {
+    width: 80px;
+  }
+
+  .carousel-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 3px;
+  }
+
+  .carousel-item {
+    width: 70px;
+  }
+
+  .carousel-item img {
+    width: 35px;
+    height: 35px;
+  }
+}
