@@ -20,7 +20,7 @@ function SearchBar({ onSearch }) {
   return (
     <div className="search-bar-container">
       <div className="logo-container">
-        <img className='logo' src="./public/assets/logo.png" alt="" srcSet="" />
+        <img className='logo' src="/assets/logo.png" alt="" srcSet="" />
       </div>
       <div className="search-bar">
         <input
